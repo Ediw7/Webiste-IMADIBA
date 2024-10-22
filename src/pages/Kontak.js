@@ -23,7 +23,7 @@ const Kontak = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section className="py-20 bg-blue-900 text-white">
+      <section className="py-20 bg-blue-900 text-white rounded-lg">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4 text-center">Kontak Kami</h1>
           <div className="w-32 h-1 bg-[#fdc259] mb-6 rounded-lg mx-auto"></div>
