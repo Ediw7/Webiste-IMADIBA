@@ -99,8 +99,8 @@ const Ekotif = () => {
           {/* Ketua dan Wakil Ketua */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12" data-aos="zoom-in">
             {[
-              { name: 'Wirayudha Setyawan', position: 'Kepala Bidang', description: 'Teknik Perkapalan 2022', igLink: 'https://www.instagram.com/wirayudhastya/', image: '/antik.jpeg' },
-              { name: 'Zhafa Nazhilla', position: 'Wakil Kepala Bidang', description: 'Agribisnis 2022', igLink: 'https://www.instagram.com/zhafanazhillaa/', image: '/tegar.jpeg' },
+              { name: 'Zulfa', position: 'Kepala Bidang', description: 'Agribisnis 2022', igLink: 'https://www.instagram.com/zulfafatwaa_/', image: '' },
+              { name: 'Lupa', position: 'Wakil Kepala Bidang', description: 'Agribisnis 2022', igLink: '', image: '' },
             ].map((member, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 duration-300 text-center">
                 <div className="w-32 h-32 mx-auto mb-4">
@@ -178,12 +178,9 @@ const Ekotif = () => {
             <div className="w-32 h-1 bg-[#fdc259] mb-10 rounded-lg mx-auto"></div> 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: 'MADIBA Fit & Fun', description: 'deskripsi' },
-                { title: 'Pendataan dan penjaringan MABA', description: 'deskripsi'},
-                { title: 'pendataan Alumni', description: 'deskripsi'},
-                { title: 'Sambang Wisuda', description: 'deskripsi'},
-                { title: 'Makrab', description: 'deskripsi'},
-                { title: 'Hut IMADIBA', description: 'deskripsi'},
+                { title: 'Pendanaan kreatif,', description: 'deskripsi' },
+                { title: 'IMADIBA merch x jaket kabinet', description: 'deskripsi'},
+                { title: 'Review UMKM', description: 'deskripsi'},
               ].map((program, index) => (
                 <div data-aos="zoom-in" key={index}>
                   <ProgramCard {...program} />

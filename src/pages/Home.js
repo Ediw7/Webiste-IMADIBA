@@ -143,14 +143,14 @@ const Home = () => {
       <section id="latest-updates" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-2 text-center">
-            Program Kami
+            Program Unggulan Kami
           </h2>
           <div className="w-32 h-1 bg-[#fdc259] mb-12 rounded-lg mx-auto"></div> 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 date: "12 Oktober 2024",
-                title: "IMADIBA KEMERDEKAAN",
+                title: "Partnership x Pendanaan Kreatif",
                 description: "Deskripsi",
                 image: ""
               },
@@ -162,28 +162,22 @@ const Home = () => {
               },
               {
                 date: "8 Oktober 2024",
-                title: "BATANG DIPS ART COMPETITION",
+                title: "Welcoming Party",
                 description: "Deskripsi",
                 image: ""
               },
               {
-                date: "10 Oktober 2024",
-                title: "ALUMNI INSIGHT",
-                description: "Deskripsi.",
+                date: "8 Oktober 2024",
+                title: "IMADIBA Fit & Fun",
+                description: "Deskripsi",
                 image: ""
               },
               {
-                date: "10 Oktober 2024",
-                title: "ALUMNI INSIGHT",
-                description: "Deskripsi.",
+                date: "8 Oktober 2024",
+                title: "Batang Dips Art Competition",
+                description: "Deskripsi",
                 image: ""
-              },
-              {
-                date: "10 Oktober 2024",
-                title: "ALUMNI INSIGHT",
-                description: "Deskripsi.",
-                image: ""
-              }
+              }              
             ].map((update, index) => (
               <div
                 key={index}
