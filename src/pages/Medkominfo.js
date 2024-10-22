@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../components/Footer';
 import { FaInstagram } from 'react-icons/fa';
 import { ChevronLeft, ChevronRight} from 'lucide-react';
@@ -74,6 +74,9 @@ const ProgramCard = ({ title, description }) => (
 );
 
 const Medkominfo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll ke atas saat komponen dimuat
+  }, []);
   return (
     <div className="min-h-screen">
       {/* Header Section */}
