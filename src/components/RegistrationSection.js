@@ -93,7 +93,7 @@ const RegistrationSection = () => {
                   
                   {step.hasButton && (
                     <button
-                      onClick={() => window.open('https://docs.google.com/spreadsheets', '_blank')}
+                      onClick={() => window.open('https://docs.google.com/spreadsheets/d/1gk8ENxWYnZlIPd-3XaSjPEPG0juBDZtiXfSkpR-jHlQ/edit?gid=0#gid=0', '_blank')}
                       className="mt-3 inline-flex items-center gap-1 bg-blue-900 text-white px-4 py-1.5 rounded text-xs font-medium hover:bg-blue-800 transition-colors duration-200"
                     >
                       Lihat Spreadsheet
