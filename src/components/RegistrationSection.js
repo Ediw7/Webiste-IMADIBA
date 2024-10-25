@@ -18,7 +18,7 @@ const RegistrationSection = () => {
     },
     {
       icon: <Calendar size={20} />,
-      date: "25 Oktober",
+      date: "25 Oktober 2024",
       title: "Pengumuman",
       description: "Lolos Berkas & Jadwal Wawancara",
       hasButton: true,
@@ -26,14 +26,14 @@ const RegistrationSection = () => {
     },
     {
       icon: <MessageSquare size={20} />,
-      date: "26-27 Oktober",
+      date: "26-27 Oktober 2024",
       title: "Wawancara",
       description: "Tahap Seleksi Kandidat",
       status: "upcoming"
     },
     {
       icon: <CheckCircle size={20} />,
-      date: "29 Oktober",
+      date: "29 Oktober 2024",
       title: "Pengumuman Akhir",
       description: "Staff IMADIBA 2024/2025",
       status: "upcoming"
