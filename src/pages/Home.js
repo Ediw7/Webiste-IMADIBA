@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
-import { ArrowRight, Award, BookOpen, Briefcase, ChevronDown } from 'lucide-react';
+import { ArrowRight, Award, BookOpen, Briefcase } from 'lucide-react';
+import RegistrationSection from '../components/RegistrationSection'; // Sesuaikan jalur sesuai dengan lokasi file
+
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -12,11 +14,10 @@ const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      
-      // Check if sections should be visible
+
       const cardsSection = document.getElementById('info-cards');
       const updatesSection = document.getElementById('latest-updates');
-      
+
       if (cardsSection) {
         const cardPosition = cardsSection.offsetTop - window.innerHeight + 200;
         setIsVisible(prev => ({
@@ -24,7 +25,7 @@ const Home = () => {
           cards: window.scrollY > cardPosition
         }));
       }
-      
+
       if (updatesSection) {
         const updatePosition = updatesSection.offsetTop - window.innerHeight + 200;
         setIsVisible(prev => ({
@@ -35,21 +36,19 @@ const Home = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initially
-    
+    handleScroll();
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const parallaxOffset = -scrollY * 0.3;
-
   return (
     <div className="min-h-screen">
-    {/* Hero Section without Parallax */}
-    <section className="relative h-screen bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden rounded-lg">
-      <div className="absolute inset-0">
-        <div className="bg-black opacity-50 absolute inset-0 rounded-lg"></div>
-      </div>
-        
+      {/* Hero Section without Parallax */}
+      <section className="relative h-screen bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden rounded-lg">
+        <div className="absolute inset-0">
+          <div className="bg-black opacity-50 absolute inset-0 rounded-lg"></div>
+        </div>
+
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <div className="animate-fadeIn opacity-0" style={{ animation: 'fadeIn 1s forwards' }}>
             <h1 className="text-5xl font-bold mb-2 tracking-tight">
@@ -66,20 +65,21 @@ const Home = () => {
           </div>
 
           <div className="space-y-4 animate-slideUp opacity-0" style={{ animation: 'slideUp 1s 0.5s forwards' }}>
-          <h2 className="text-4xl font-extrabold text-white">
-             KABINET ARAH PULANG
-        </h2>
-
+            <h2 className="text-4xl font-extrabold text-white">
+              KABINET ARAH PULANG
+            </h2>
             <p className="text-xl font-light italic mb-6">
               "Menuju Arah, Kembali Pulang"
             </p>
-            <button className="bg-[#fdc259] text-black px-8 py-3 rounded-full font-bold hover:bg-[#fdcd70] transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center w-fit">
-              Bergabung Bersama Kami
-              <ArrowRight className="ml-2" />
-            </button>
           </div>
         </div>
       </section>
+
+    {/* masukkin komponen disini */}
+    <section className="py-20">
+        <RegistrationSection />
+      </section>
+
 
       {/* Info Cards Section with Scroll Animation */}
       <section id="info-cards" className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -149,31 +149,31 @@ const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                date: "12 Oktober 2024",
+                date: "2024",
                 title: "Partnership x Pendanaan Kreatif",
                 description: "Deskripsi",
                 image: ""
               },
               {
-                date: "10 Oktober 2024",
+                date: "2024",
                 title: "ALUMNI INSIGHT",
                 description: "Deskripsi.",
                 image: ""
               },
               {
-                date: "8 Oktober 2024",
+                date: "2024",
                 title: "Welcoming Party",
                 description: "Deskripsi",
                 image: ""
               },
               {
-                date: "8 Oktober 2024",
+                date: "2024",
                 title: "IMADIBA Fit & Fun",
                 description: "Deskripsi",
                 image: ""
               },
               {
-                date: "8 Oktober 2024",
+                date: "2024",
                 title: "Batang Dips Art Competition",
                 description: "Deskripsi",
                 image: ""

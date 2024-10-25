@@ -4,33 +4,12 @@ import Footer from '../components/Footer';
 const merchandiseItems = [
   {
     id: 1,
-    name: 'Kaos Keren',
+    name: 'contoh',
     price: 150000,
-    description: 'Kaos berkualitas tinggi dengan desain eksklusif.',
+    description: 'contoh',
     image: 'https://via.placeholder.com/300x300', // Ganti dengan URL gambar yang sesuai
   },
-  {
-    id: 2,
-    name: 'Topi Stylish',
-    price: 75000,
-    description: 'Topi trendy untuk gaya sehari-hari.',
-    image: 'https://via.placeholder.com/300x300', // Ganti dengan URL gambar yang sesuai
-  },
-  {
-    id: 3,
-    name: 'Stiker Unik',
-    price: 25000,
-    description: 'Stiker dengan berbagai desain menarik.',
-    image: 'https://via.placeholder.com/300x300', // Ganti dengan URL gambar yang sesuai
-  },
-  {
-    id: 4,
-    name: 'Stiker Unik',
-    price: 25000,
-    description: 'Stiker dengan berbagai desain menarik.',
-    image: 'https://via.placeholder.com/300x300', // Ganti dengan URL gambar yang sesuai
-  },
-  // Tambahkan lebih banyak item sesuai kebutuhan
+  
 ];
 
 const Merchandise = () => {

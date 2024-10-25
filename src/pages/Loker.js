@@ -4,38 +4,17 @@ import Footer from '../components/Footer';
 const Loker = () => {
   const jobOpenings = [
     {
-      title: 'Web Developer',
-      company: 'Perusahaan A',
-      description: 'Mencari web developer dengan pengalaman minimal 2 tahun.',
+      title: 'contoh',
+      company: 'Contoh',
+      description: 'Contoh',
       requirements: [
-        'Menguasai HTML, CSS, dan JavaScript',
-        'Pengalaman dengan React',
-        'Kemampuan bekerja dalam tim',
+        '1',
+        '2',
+        '2',
       ],
       applyLink: '/apply/web-developer', // Ganti dengan tautan ke halaman lamaran
     },
-    {
-      title: 'Desainer Grafis',
-      company: 'Perusahaan B',
-      description: 'Mencari desainer grafis yang kreatif dan inovatif.',
-      requirements: [
-        'Pengalaman menggunakan Adobe Creative Suite',
-        'Memiliki portofolio yang baik',
-        'Kemampuan komunikasi yang baik',
-      ],
-      applyLink: '/apply/desainer-grafis', // Ganti dengan tautan ke halaman lamaran
-    },
-    {
-      title: 'Project Manager',
-      company: 'Perusahaan C',
-      description: 'Mencari project manager dengan pengalaman dalam manajemen proyek.',
-      requirements: [
-        'Pengalaman minimal 3 tahun dalam manajemen proyek',
-        'Kemampuan analisis dan pemecahan masalah',
-        'Keterampilan interpersonal yang kuat',
-      ],
-      applyLink: '/apply/project-manager', // Ganti dengan tautan ke halaman lamaran
-    },
+    
     // Tambahkan lowongan kerja lainnya di sini
   ];
 

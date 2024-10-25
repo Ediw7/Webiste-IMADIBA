@@ -6,36 +6,13 @@ const Beasiswa = () => {
   const scholarships = [
     {
       id: 1,
-      title: "Beasiswa Pemerintah Batang",
-      type: "Full Scholarship",
+      title: "Contoh",
+      type: "Contoh",
       level: "S1",
-      deadline: "31 Oktober 2024",
-      description: "Beasiswa penuh untuk mahasiswa Batang berprestasi mencakup biaya kuliah dan tunjangan bulanan."
+      deadline: "2024",
+      description: "contoh"
     },
-    {
-      id: 2,
-      title: "Beasiswa LPDP",
-      type: "Full Scholarship",
-      level: "S2/S3",
-      deadline: "15 November 2024",
-      description: "Program beasiswa pascasarjana dalam dan luar negeri untuk putra-putri terbaik Banten."
-    },
-    {
-      id: 3,
-      title: "Beasiswa Bank Indonesia",
-      type: "Partial Scholarship",
-      level: "S1",
-      deadline: "1 November 2024",
-      description: "Beasiswa parsial untuk mahasiswa bidang ekonomi, teknik, dan sosial humaniora."
-    },
-    {
-      id: 4,
-      title: "Beasiswa Unggulan Kemendikbud",
-      type: "Full Scholarship",
-      level: "S1/S2",
-      deadline: "20 Oktober 2024",
-      description: "Program beasiswa unggulan dari Kemendikbud untuk mahasiswa berprestasi akademik dan non-akademik."
-    }
+    
   ];
 
   return (

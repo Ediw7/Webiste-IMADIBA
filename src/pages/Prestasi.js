@@ -4,23 +4,12 @@ import Footer from '../components/Footer';
 const Prestasi = () => {
   const achievements = [
     {
-      name: 'Wirayudha Setyawan',
-      position: 'Kepala Bidang',
-      achievement: 'Juara I Lomba Perkapalan 2023',
-      image: '/antik.jpeg',
+      name: 'contoh',
+      position: 'contoh',
+      achievement: 'contoh',
+      image: '',
     },
-    {
-      name: 'Zhafa Nazhilla',
-      position: 'Wakil Kepala Bidang',
-      achievement: 'Best Speaker 2023',
-      image: '/tegar.jpeg',
-    },
-    {
-      name: 'Nama Anggota Lain',
-      position: 'Jabatan',
-      achievement: 'Prestasi Lainnya',
-      image: '/path/to/image.jpg', // Ganti dengan path gambar yang sesuai
-    },
+   
     // Tambahkan anggota dan prestasi lainnya di sini
   ];
 
