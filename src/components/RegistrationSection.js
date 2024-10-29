@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Calendar, ChevronRight, Users, MessageSquare, CheckCircle } from 'lucide-react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import 'aos/dist/aos.css';
 
 const RegistrationSection = () => {
   useEffect(() => {
-    AOS.init(); // Initialize AOS
+    AOS.init();
   }, []);
 
   const steps = [
@@ -21,24 +21,30 @@ const RegistrationSection = () => {
       date: "25 Oktober 2024",
       title: "Pengumuman",
       description: "Lolos Berkas & Jadwal Wawancara",
-      hasButton: true,
-      status: "active"
+      status: "completed"
     },
     {
       icon: <MessageSquare size={20} />,
       date: "26-27 Oktober 2024",
       title: "Wawancara",
       description: "Tahap Seleksi Kandidat",
-      status: "upcoming"
+      status: "completed"
     },
     {
       icon: <CheckCircle size={20} />,
       date: "29 Oktober 2024",
       title: "Pengumuman Akhir",
       description: "Staff IMADIBA 2024/2025",
-      status: "upcoming"
+      hasButton: true,
+      status: "active"
     }
   ];
+
+  // Temukan indeks terakhir dari langkah dengan status 'completed' atau 'active'
+  const lastCompletedIndex = steps.findIndex(step => step.status === 'active') !== -1 
+    ? steps.findIndex(step => step.status === 'active') 
+    : steps.filter(step => step.status === 'completed').length - 1;
+  const connectingLineWidth = `${((lastCompletedIndex + 1) / steps.length) * 100}%`;
 
   return (
     <section className="py-8 bg-white">
@@ -59,7 +65,7 @@ const RegistrationSection = () => {
           <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-4">
             {/* Connecting Line */}
             <div className="hidden md:block absolute top-1/2 left-0 right-0 h-px bg-gray-200 -translate-y-1/2 z-0">
-              <div className="h-full bg-blue-900" style={{ width: '25%' }}></div>
+              <div className="h-full bg-blue-900" style={{ width: connectingLineWidth }}></div>
             </div>
 
             {/* Steps */}
@@ -67,8 +73,8 @@ const RegistrationSection = () => {
               <div 
                 key={index}
                 className="relative flex flex-col items-center text-center z-10 w-full md:w-48"
-                data-aos="fade-up" // Add AOS effect
-                data-aos-delay={`${index * 100}`} // Staggered animation delay
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
               >
                 {/* Step Circle */}
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-3 transition-all duration-300
@@ -93,7 +99,7 @@ const RegistrationSection = () => {
                   
                   {step.hasButton && (
                     <button
-                      onClick={() => window.open('https://docs.google.com/spreadsheets/d/1gk8ENxWYnZlIPd-3XaSjPEPG0juBDZtiXfSkpR-jHlQ/edit?gid=0#gid=0', '_blank')}
+                      onClick={() => window.open('https://docs.google.com/spreadsheets/d/1eFZ8JPeSoYrm8oOIZCFUpm-79U2EutFH1AKqT7k8lAU/edit?usp=sharing', '_blank')}
                       className="mt-3 inline-flex items-center gap-1 bg-blue-900 text-white px-4 py-1.5 rounded text-xs font-medium hover:bg-blue-800 transition-colors duration-200"
                     >
                       Lihat Spreadsheet
