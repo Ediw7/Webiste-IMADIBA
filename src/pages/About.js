@@ -109,7 +109,7 @@ const About = () => {
             <h3 className="text-xl font-bold mb-2 text-gray-800">{member.name}</h3>
             <p className="text-gray-600">{member.position}</p>
             <p className="pt-1 text-gray-500 italic">{member.description}</p>
-            <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-yellow-600">
+            <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-blue-600">
                 <FaInstagram size={24} />
             </a>
             </div>
@@ -137,7 +137,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{member.name}</h3>
                 <p className="text-gray-600">{member.position}</p>
                 <p className="pt-1 text-gray-500 italic">{member.description}</p>
-                <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-yellow-600">
+                <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-blue-600">
                   <FaInstagram size={24} />
                 </a>
               </div>
@@ -163,7 +163,7 @@ const About = () => {
                 </div>
                 <h4 className="text-xl font-bold text-gray-800">{field.name}</h4>
                 <p className="pt-1 text-gray-500 italic">{field.description}</p> 
-                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-500 transition-colors duration-300">
                   Selengkapnya
                 </button>
               </Link>
@@ -186,7 +186,7 @@ const About = () => {
                 </div>
                 <h4 className="text-xl font-bold text-gray-800">{field.name}</h4>
                 <p className="pt-1 text-gray-500 italic">{field.description}</p>
-                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-500 transition-colors duration-300">
                   Selengkapnya
                 </button>
               </Link>
