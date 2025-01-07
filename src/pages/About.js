@@ -77,7 +77,7 @@ const About = () => {
             </div>
             <div data-aos="zoom-in">
               <img 
-                src="/api/placeholder/600/400"
+                src="/arah.png"
                 alt="IMADIBA Activities"
                 className="rounded-xl shadow-lg"
               />
@@ -95,21 +95,21 @@ const About = () => {
           {/* Ketua dan Wakil Ketua */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12" data-aos="zoom-in">
         {[
-            { name: 'Nadifah Ramadhanti', position: 'Ketua Umum', description: 'Matematika 2022', igLink: 'https://www.instagram.com/nadifaraa__/', image: '/antik.jpeg' },
-            { name: 'M Tegar Ramadhani', position: 'Wakil Ketua', description: 'Teknik Elektro 2022', igLink: 'https://www.instagram.com/mtegar.ramadhani/', image: '/tegar.jpeg' },
+            { name: 'Nadifah Ramadhanti', position: 'Ketua Umum', description: 'Matematika 2022', igLink: 'https://www.instagram.com/nadifaraa__/', image: '/ketua.png' },
+            { name: 'M Tegar Ramadhani', position: 'Wakil Ketua', description: 'Teknik Elektro 2022', igLink: 'https://www.instagram.com/mtegar.ramadhani/', image: '/wakil.png' },
         ].map((member, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 duration-300 text-center">
             <div className="w-32 h-32 mx-auto mb-4">
                 <img
                 src={member.image}  // Menggunakan properti 'image' yang berbeda untuk setiap anggota
                 alt={member.name}
-                className="w-full h-full rounded-full object-cover border-4 border-[#fdc259] shadow-md"
+                className="w-full h-full rounded-lg object-cover shadow-md border border-[#7085cf]"
                 />
             </div>
             <h3 className="text-xl font-bold mb-2 text-gray-800">{member.name}</h3>
             <p className="text-gray-600">{member.position}</p>
             <p className="pt-1 text-gray-500 italic">{member.description}</p>
-            <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#fdc259] hover:text-yellow-600">
+            <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-yellow-600">
                 <FaInstagram size={24} />
             </a>
             </div>
@@ -121,23 +121,23 @@ const About = () => {
           <div className="w-32 h-1 bg-[#fdc259] mb-10 rounded-lg mx-auto"></div> 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"data-aos="zoom-in">
             {[
-              { name: 'Bunga Cinta R', position: 'Bendahara 1', description: 'Agribisnis 2022',igLink: 'https://www.instagram.com/bungacintr_/',image: '/bunga.jpeg' },
-              { name: 'Belum Ada', position: 'Bendahara 2', description: 'Belum Ada',igLink: 'https://instagram.com/dimas' },
-              { name: 'Azzahra Dea P', position: 'Sekretaris 1', description: 'Agribisnis 2022',igLink: 'https://www.instagram.com/azzhrprmst/',image: '/ara.jpg' },
-              { name: 'Belum Ada', position: 'Sekretaris 2', description: 'Belum Ada',igLink: 'https://instagram.com/dimas' },
+              { name: 'Bunga Cinta R', position: 'Bendahara 1', description: 'Agribisnis 2022',igLink: 'https://www.instagram.com/bungacintr_/',image: '/bunga.png' },
+              { name: 'Syfa Nur Hidayah', position: 'Bendahara 2', description: 'Teknik Geodesi 2023',igLink: 'https://instagram.com/syfaaaa.nh/',image: '/syfa.png' },
+              { name: 'Azzahra Dea P', position: 'Sekretaris 1', description: 'Agribisnis 2022',igLink: 'https://www.instagram.com/azzhrprmst/',image: '/ara.png' },
+              { name: 'Nuraeni', position: 'Sekretaris 2', description: 'Agribisnis 2024',igLink: 'https://instagram.com/nrrenyy_/', image: '/nuraeni.png' },
             ].map((member, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 duration-300 text-center">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full rounded-full object-cover border-4 border-[#fdc259] shadow-md"
+                    className="w-full h-full rounded-lg object-cover shadow-md border border-[#7085cf]"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{member.name}</h3>
                 <p className="text-gray-600">{member.position}</p>
                 <p className="pt-1 text-gray-500 italic">{member.description}</p>
-                <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#fdc259] hover:text-yellow-600">
+                <a href={member.igLink} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-[#7085cf] hover:text-yellow-600">
                   <FaInstagram size={24} />
                 </a>
               </div>
@@ -149,21 +149,21 @@ const About = () => {
           <div className="w-32 h-1 bg-[#fdc259] mb-10 rounded-lg mx-auto"></div> 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4"data-aos="fade-down">
             {[
-              { name: 'PSDM', link: '/Psdm', image: '/api/placeholder/128/128', description: 'Pengembangan Sumber Daya Manusia'},
-              { name: 'HUKER', link: '/Huker', image: '/api/placeholder/128/128', description: 'Hubungan Eksternal' },
-              { name: 'EKOTIF', link: '/Ekotif', image: '/api/placeholder/128/128', description: 'Ekonomi Kreatif' },
+              { name: 'PSDM', link: '/Psdm', image: '/psdm.png', description: 'Pengembangan Sumber Daya Manusia'},
+              { name: 'HUKER', link: '/Huker', image: '/huker.png', description: 'Hubungan dan Kerjasama Eksternal' },
+              { name: 'EKOTIF', link: '/Ekotif', image: '/ekotif.png', description: 'Ekonomi Kreatif' },
             ].map((field, index) => (
               <Link key={index} to={field.link} className="bg-white rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 duration-300 text-center">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <img
                     src={field.image}
                     alt={field.name}
-                    className="w-full h-full rounded-lg object-cover shadow-md border border-[#fdc259]"
+                    className="w-full h-full rounded-lg object-cover shadow-md border border-[#7085cf]"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-gray-800">{field.name}</h4>
                 <p className="pt-1 text-gray-500 italic">{field.description}</p> 
-                <button className="mt-4 bg-[#fdc259] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
                   Selengkapnya
                 </button>
               </Link>
@@ -173,20 +173,20 @@ const About = () => {
           {/* Dua bidang di bawah */}
           <div className="flex justify-center mt-8"data-aos="fade-up">
             {[
-              { name: 'DIMAS', link: '/Dimas', image: '/api/placeholder/128/128', description: 'Pengabdian Masyarakat' },
-              { name: 'MEDKOMINFO', link: '/Medkominfo', image: '/api/placeholder/128/128', description: 'Media Komunikasi dan Informasi' },
+              { name: 'DIMAS', link: '/Dimas', image: '/dimas.png', description: 'Pengabdian Masyarakat' },
+              { name: 'MEDKOMINFO', link: '/Medkominfo', image: '/medkom.png', description: 'Media Komunikasi dan Informasi' },
             ].map((field, index) => (
               <Link key={index} to={field.link} className="bg-white rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 duration-300 text-center mx-2">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <img
                     src={field.image}
                     alt={field.name}
-                    className="w-full h-full rounded-lg object-cover shadow-md border border-[#fdc259]"
+                    className="w-full h-full rounded-lg object-cover shadow-md border border-[#7085cf]"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-gray-800">{field.name}</h4>
                 <p className="pt-1 text-gray-500 italic">{field.description}</p>
-                <button className="mt-4 bg-[#fdc259] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+                <button className="mt-4 bg-[#7085cf] text-white font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
                   Selengkapnya
                 </button>
               </Link>
