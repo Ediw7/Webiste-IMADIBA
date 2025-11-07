@@ -66,7 +66,7 @@ const Home = () => {
 
           <div className="space-y-4 animate-slideUp opacity-0" style={{ animation: 'slideUp 1s 0.5s forwards' }}>
             <h2 className="text-4xl font-extrabold text-white">
-              KABINET ARAH PULANG
+              KABINET ABHIPRAYA RENJANA
             </h2>
             <p className="text-xl font-light italic mb-6">
               "Menuju Arah, Kembali Pulang"
